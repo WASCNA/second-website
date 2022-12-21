@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meetingList>
+		
+	<meeting>
+			<ID>38</ID>
+			<group>Steps to Freedom</group>
+			<area>North South East West</area>
+			<day>Friday</day>
+			<time>7:00 PM</time>
+			<format>Basic Text</format>
+				
+	</meeting>
+		
+	<meeting>
+			<ID>40</ID>
+			<group>Women in Recovery</group>
+			<area>South Hills</area>
+			<day>Sunday</day>
+			<time>7:00 PM</time>
+						<format>Basic Text</format>
+				
+	</meeting>
+	
+	<meeting>
+			<ID>41</ID>
+			<group>Our Gratitude Speaks</group>
+			<area>Wheeling</area>
+			<day>Monday</day>
+			<time>7:30 PM</time>
+			<format>Speaker</format>	
+			
+	</meeting>
+			
+</meetingList>

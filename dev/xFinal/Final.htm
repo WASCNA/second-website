@@ -1,0 +1,227 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>JMA 578</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="/images/EggDudeCursor.ico" />
+
+<style>
+@font-face {
+	font-family:'chalk';
+	src: url('fonts/SqueakyChalkSound.ttf') format('truetype');
+	}
+	
+a {
+		text-decoration: none;
+	}
+
+#areasxml td a {
+		color: #e88862;
+		text-decoration: :none;
+		font-size: .9em;
+	}
+
+</style>
+			
+<script language="javascript">
+var xmlHttp, position, itemLength, xmlDoc;
+position=0;
+
+function GetXmlHttpObject()
+{
+var xmlHttp=null;
+try
+  {
+  xmlHttp=new XMLHttpRequest();
+  }
+catch (e)
+  {
+  try
+    {
+    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+    }
+  catch (e)
+    {
+    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+  }
+return xmlHttp;
+}
+
+function initialize(fileName){
+	xmlHttp=GetXmlHttpObject();
+	if (xmlHttp==null){
+		alert ("Your browser does not support AJAX!");
+		return;
+	}
+	position=0;
+	xmlHttp.async=false;
+	xmlHttp.onreadytimechange=timeChanged;
+	xmlHttp.open("GET",fileName);
+	xmlHttp.send(null);
+}
+
+function timeChanged(){
+	if (xmlHttp.readytime==4){
+		document.getElementById("postResponseText").innerHTML=xmlHttp.responseText;
+
+		xmlDoc=xmlHttp.responseXML.documentElement;
+		itemLength=xmlDoc.getElementsByTagName("meeting").length;
+		showItem();
+	}
+}	
+
+
+function showItem(){
+		childList=xmlDoc.getElementsByTagName("meeting")[position].childNodes;
+		for (var i=0;i<childList.length;i++){
+			if (childList[i].nodeName=="ID"){
+				ID=childList[i].childNodes[0].nodeValue;
+			}
+
+			if (childList[i].nodeName=="group"){
+				group=childList[i].childNodes[0].nodeValue;
+			}
+			if (childList[i].nodeName=="area"){
+				area=childList[i].childNodes[0].nodeValue;
+			}
+	
+			if (childList[i].nodeName=="day"){
+				day=childList[i].childNodes[0].nodeValue;
+			}
+			
+			if (childList[i].nodeName=="time"){
+				time=childList[i].childNodes[0].nodeValue;
+			}
+			if (childList[i].nodeName=="format"){
+				format=childList[i].childNodes[0].nodeValue;
+			}
+		}
+		document.getElementById("ID").innerHTML=ID;
+	    document.getElementById("group").innerHTML=group;
+		document.getElementById("area").innerHTML=area;
+		document.getElementById("day").innerHTML=day;
+		document.getElementById("time").innerHTML=time;
+		document.getElementById("format").innerHTML=format;
+}
+
+function nextNode(){
+	if (position<itemLength-1){
+		position=position+1;
+		showItem();
+	}
+	else{
+		alert("Last Record");
+	}
+}
+function prevNode(){
+	if (position>0){
+		position=position-1;
+		showItem();
+	}
+	else{
+		alert("First Record");
+	}
+}
+
+</script>
+</head>
+<body onLoad="initialize('test.xml');" style="background:url(images/brickMixed.jpg);color:#e88862;">
+	
+		<div style="background:url('images/chalkboard_background3.png'); width:70%; display: block; margin-left: auto; margin-right: auto;
+    background-repeat: repeat;">
+
+<div class="content">
+
+<img class="banner"   src="images/EggDude-Design-BarGraph.png" alt="EggDude Design Bar Graph Logo" />
+<img class="wood" style="float:left; margin-top:-20em;" src="images/woodside2-922long.jpg" alt="" />
+<img class="wood" style="float:right; margin-top:-20em;" src="images/woodside2-922long.jpg" alt="" />
+
+<div class="fill" style="margin-top:2em;">
+
+<h1 style="padding-bottom: 1em;">Terrance Zerla&nbsp;&nbsp;Fall '16</h1>
+
+
+<ul id="nav" style="padding-top:1em; padding-bottom:.6em; margin-bottom:1em;">
+	<li><a href="index.php">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+	<li><a href="522.php">JMA 522</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+    <li><a href="578.php">JMA 578</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+    <li><a href="582.php">JMA 582</a></li>
+</ul>
+
+ <div style="float:left; padding-bottom:4em;">
+ <table id="areasxml">
+	<tr><th><h2>Areas</h2></th></tr>
+		   <tr><td><a href="#" onClick="initialize('Final21.xml');">Beaver Valley&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ BVASCNA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final2.xml');">Butler&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ BASCNA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final3.xml');">Central Western PA&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ CWPASCNA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final4.xml');">Central Westmoreland&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ CWANA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final5.xml');">East End&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ EEANA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize(Final6.xml');">Erie County&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ ECANA</span></a></td></tr>
+          <tr><td> <a href="#" onClick="initialize('Final7.xml');">Greater Erie&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ GEANA</span></a></td></tr>
+          <tr><td> <a href="#" onClick="initialize('Final8.xml');">Intertime Crossroads&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ ICANA</span></a></td></tr>
+          <tr><td> <a href="#" onClick="initialize('Final9.xml');">Kinzua&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ KASCNA</span></a></td></tr>
+          <tr><td> <a href="#" onClick="initialize('Final10.xml');">Laurel Mt Highland&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ LMHANA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final11.xml');">Lawrence County&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ LCANA</span></a></td></tr>
+          <tr><td> <a href="#" onClick="initialize('Final12.xml');">Northeast&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ NEASCNA</span></a></td></tr>
+          <tr><td> <a href="#" onClick="initialize('Final13.xml');">North East West South&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ NEWS</span></a></td></tr>
+          <tr><td> <a href="#" onClick="initialize('Final14.xml');">North Pittsburgh&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ NPASCNA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final15.xml');">Penn-Ohio&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ POANA</span></a></td></tr>
+          <tr><td><a href="#" onClick="initialize('Final16.xml');">Pittsburgh&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ PASCNA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final17.xml');">Pittsburgh Inner City&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ PICANA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final18.xml');">South Hills&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ SHASCNA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final19.xml');">South West&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ SWANA</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('Final20.xml');">WE&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ WE</span></a></td></tr>
+           <tr><td><a href="#" onClick="initialize('test.xml');">Wheeling&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">
+ WASCNA</span></a></td></tr>
+	 </table>
+            
+</div>
+	
+	<div style="xfloat:right; xmargin-right:9em;">
+		<center>
+			<table border="1" colspan="2" align="center">
+				<tr><th><h1>Meeting Details</h1></th></tr>
+			<tr><td style="margin-left:2em;" >&nbsp;&nbsp;<input type="button" value="< Prev" onClick="prevNode()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    <input type="button" value="Next >" onClick="nextNode()">&nbsp;&nbsp;</td>
+			</tr>
+			<tr><td align="right">ID:</td><td><span ID="ID"></span></td></tr>
+			<tr><td align="right">Group Name:</td><td><span ID="group"></span></td></tr>
+			<tr><td align="right">Area:</td><td><span ID="area"></span></td></tr>
+			<tr><td align="right">Day:</td><td><span ID="day"></span></td></tr>
+			<tr><td align="right">Time:</td><td><span ID="time"></span></td></tr>
+			<tr><td align="right">Format:</td><td><span ID="format"></span></td></tr>
+			</table>
+       </center>
+        </div>
+	<textarea style="float:right; margin-right:6em; margin-top:2em; padding:2em;" rows="10" cols="50" id="postResponseText"></textarea>
+			</div>
+			<footer style="margin-top:-1em;">
+<p align="center"><img style="height:.1em;  padding:1em;" src="images/Divider.jpg" alt="" /><br />
+	<span style="align:center;">�<?php echo date("Y"); ?> Terrance Zerla</span><br /></p>
+</footer><br /><br />
+<img style="margin-top:-2.3em; margin-left:-1em;" src="images/chalktray.png" alt="chalk tray" width="103%" />
+			</div>
+    </body>
+</html>

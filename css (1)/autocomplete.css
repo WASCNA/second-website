@@ -1,0 +1,7 @@
+#question{ font-family: arial,helvetica,sans-serif; color: dark-gray;}
+#question-suggest{ font-family: arial,helvetica,sans-serif; color: black;}
+.ea-sug-normal { background-color: white; padding: 2px 3px;}
+.ea-sug-select { background-color: #336699; color: #ffffcc; padding: 2px 3px;}
+.ea-sug-text {}
+.ea-sug-match { font-style: normal; }
+

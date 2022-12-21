@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML Sitemap</title>
+
+<link rel="icon" href="images/images/flavicon.ico">
+
+<link rel="icon" href="images/images/flavicon.ico">
+    <meta id="MetaDescription" name="description" CONTENT="Sitemap created using XmlSitemapGenerator.org - the free online XML sitemap generator" />
+    <meta id="MetaKeywords" name="keywords" CONTENT="XML Sitemap Generator" />
+    <meta CONTENT="XmlSitemapGenerator.org" name="Author" />
+    <style>
+        body, head, #xsg {margin:0px 0px 0px 0px; line-height:22px; color:#666666; width:100%; padding:0px 0px 0px 0px; font-family: "Lucida Grande" , "Lucida Sans Unicode" , Verdana, Tahoma, Arial, sans-serif; font-size:13px;}
+        #xsg a {text-decoration:none; float:left;}
+        #xsg p {margin:10px 0px 10px 0px;}
+        #xsg ul {list-style:none; margin-left:0px; padding-left:0px; float:left;}
+        #xsg li {margin:5px 0px 5px 0px;float:left;clear:both; margin-left:0px; padding-left:0px;float:left;}
+        #xsg th { text-align:left;font-size: 0.9em;padding:2px 10px 2px 2px; border-bottom:1px solid #CCCCCC; border-collapse:collapse;}
+        #xsg td { text-align:left;font-size: 0.9em; padding:2px 10px 2px 2px; border-bottom:1px solid #CCCCCC; border-collapse:collapse;}
+        
+        #xsg .title {font-size: 0.9em;  color:#132687;  font-weight:bold;}
+        #xsg .url {font-size: 0.7em; color:#999999;}
+        
+        #xsgHeader {background-color:#132687; width:100%; float:left; margin:0px 0px 5px 0px; }
+        #xsgHeader h1 {  padding:10px; float:left;}
+        #xsgHeader h1 a {color:#FFFFFF; font-size:14px; text-decoration:none;}
+        #xsgBody {padding:10px;float:left;}
+        #xsgFooter {background-color:#CCCCCC; width:100%; float:left; margin:20px 0px 15px 0px; }
+        #xsgFooter a {color:#FFFFFF; font-size:10px; text-decoration:none; padding:10px; float:left;}    
+    </style>
+</head>
+<body>
+<div id="xsg">
+<div id="xsgHeader">
+    <h1><a HREF="http://xmlsitemapgenerator.org">HTML Sitemap</a></h1>
+</div>
+<div id="xsgBody">
+
+
+<ul><li><a HREF="/Mobile/Readings/m12Traditions.html"><span CLASS="title">12 Traditons</span><br /><span CLASS="url">/Mobile/Readings/m12Traditions.html</span></a></li><li><a HREF="/Mobile/mCalculator.html"><span CLASS="title">Cleantime Calculator</span><br /><span CLASS="url">/Mobile/mCalculator.html</span></a></li><li><a HREF="/contactUs.php"><span CLASS="title">Contact Us</span><br /><span CLASS="url">/contactUs.php</span></a></li><li><a HREF="/Mobile/mForProfessionals.html"><span CLASS="title">For Professionals</span><br /><span CLASS="url">/Mobile/mForProfessionals.html</span></a></li><li><a HREF="/meetingLocator.html"><span CLASS="title">Global Meeting Locator</span><br /><span CLASS="url">/meetingLocator.html</span></a></li><li><a HREF="/Mobile/Readings/mHowItWorks.html"><span CLASS="title">How It Works</span><br /><span CLASS="url">/Mobile/Readings/mHowItWorks.html</span></a></li><li><a HREF="/Mobile/Readings/mJFT.html"><span CLASS="title">Just for Today</span><br /><span CLASS="url">/Mobile/Readings/mJFT.html</span></a></li><li><a HREF="/areaMeetingList.html"><span CLASS="title">Local Meetings</span><br /><span CLASS="url">/areaMeetingList.html</span></a></li><li><a HREF="/Mobile/mMeetings.html"><span CLASS="title">Local Meetings Mobile</span><br /><span CLASS="url">/Mobile/mMeetings.html</span></a></li><li><a HREF="/Mobile/mLinks.html"><span CLASS="title">NA Links</span><br /><span CLASS="url">/Mobile/mLinks.html</span></a></li><li><a HREF="/literature.html"><span CLASS="title">NA Literature</span><br /><span CLASS="url">/literature.html</span></a></li><li><a HREF="/Mobile/mContactUs.php"><span CLASS="title">NA Literature</span><br /><span CLASS="url">/Mobile/mContactUs.php</span></a></li><li><a HREF="/Mobile/mLiterature.html"><span CLASS="title">NA Literature Mobile</span><br /><span CLASS="url">/Mobile/mLiterature.html</span></a></li><li><a HREF="/Mobile/mReadings.html"><span CLASS="title">NA Meeting Readings</span><br /><span CLASS="url">/Mobile/mReadings.html</span></a></li><li><a HREF="/Mobile/mMeetingLocator.html"><span CLASS="title">Service</span><br /><span CLASS="url">/Mobile/mMeetingLocator.html</span></a></li><li><a HREF="/Mobile/mJustForToday.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/Mobile/mJustForToday.html</span></a></li><li><a HREF="/Mobile/mJFTemailSub.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/Mobile/mJFTemailSub.html</span></a></li><li><a HREF="/"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/</span></a></li><li><a HREF="/justForToday.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/justForToday.html</span></a></li><li><a HREF="/JFTemailSub.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/JFTemailSub.html</span></a></li><li><a HREF="/links.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/links.html</span></a></li><li><a HREF="/service.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/service.html</span></a></li><li><a HREF="/forProfessionals.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/forProfessionals.html</span></a></li><li><a HREF="/calendar.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/calendar.html</span></a></li><li><a HREF="/newHere.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/newHere.html</span></a></li><li><a HREF="/Mobile/mNeedHelp.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/Mobile/mNeedHelp.html</span></a></li><li><a HREF="/cleanTimeCalculator.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/cleanTimeCalculator.html</span></a></li><li><a HREF="/index.html"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/index.html</span></a></li><li><a HREF="/index.php"><span CLASS="title">WASCNA</span><br /><span CLASS="url">/index.php</span></a></li><li><a HREF="/Mobile/mIndex.html"><span CLASS="title">WASCNA Mobile</span><br /><span CLASS="url">/Mobile/mIndex.html</span></a></li><li><a HREF="/Mobile/mService.html"><span CLASS="title">WASCNA Service Mobile</span><br /><span CLASS="url">/Mobile/mService.html</span></a></li><li><a HREF="/Mobile/Readings/mWeDoRecover.html"><span CLASS="title">We Do Recover (reading)</span><br /><span CLASS="url">/Mobile/Readings/mWeDoRecover.html</span></a></li><li><a HREF="/Mobile/Readings/mWhat.html"><span CLASS="title">What is the NA Program</span><br /><span CLASS="url">/Mobile/Readings/mWhat.html</span></a></li><li><a HREF="/Mobile/Readings/mWho.html"><span CLASS="title">Who Is An Addict</span><br /><span CLASS="url">/Mobile/Readings/mWho.html</span></a></li><li><a HREF="/Mobile/Readings/mWhy.html"><span CLASS="title">Why Are We Here</span><br /><span CLASS="url">/Mobile/Readings/mWhy.html</span></a></li></ul><!--<guid value="71fee6f7-1218-4b1d-97df-1a1128b5426d" />--><!--Created using XmlSitemapGenerator.org-->
+
+
+
+
+</div>
+<div id="xsgFooter">
+
+<a HREF="http://www.XmlSitemapGenerator.org" TARGET="_blank"
+       title="Created using free online XML sitemap generator">
+       Created using XmlSitemapGenerator.org - the free online XML sitemap generator</a>
+
+</div>
+</div>
+</body>
+</html>

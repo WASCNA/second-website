@@ -1,0 +1,621 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+	font-family:'chalk';
+	src: url('fonts/SqueakyChalkSound.ttf')  format('truetype');
+}
+.content	{	
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	xwidth:960px;
+	font-family:'chalk';
+	color:#e88862;
+	xborder-left:thin #e88862 solid;
+	xborder-right:thin #e88862 solid;
+	xborder-bottom:thin #e88862 solid;
+ 	background:#000000;
+  	background-image: url("images/chalkboard_background3.png");
+	background-repeat: repeat;
+	} 
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height:10em;
+}
+.fill {
+	xborder:thin #e88862 solid;
+	padding-left:1em;
+	padding-right:1em;
+
+}
+body {xbackground:url(brickWall2.jpg);
+	color:#e88862;
+	background:#101710;
+}
+#sidebar {
+	float: left;
+	width: 30.8%;
+	background-color: #000000;
+	
+	border: none;
+	position:relative;
+	padding-left:10 em;
+}
+#sidebar img {
+	height:7em;
+	padding-left:10em;
+}
+#nav {
+	border:1px solid #7d7f0b;
+    border-width:1px 0 ;
+    list-style:none;
+    margin:0;
+    text-align:center;
+	padding-top:.5em;
+	padding-bottom:.2em;
+	font-size:130%;
+}
+#nav li {
+	display:inline;
+	}
+
+#nav a {
+	color:#e88862;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#nav a:hover {
+	color:#774d03;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#subnav {
+	position:relative;
+	list-style:none;
+    margin-top:1em;
+    text-align:center;
+	padding-bottom:.2em;
+	padding-top:.1em;
+	font-size:100%;
+}
+#subnav li {
+	display:inline-block;
+	border:1px solid #e88862;
+    border-width:.7px 0;
+	width:auto;
+	padding-left:1em;
+	padding-right:1em;
+	}
+#subnav a {
+	display:inline-block;
+	color:#7d7f0b;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#subnav li a:hover {
+	display:inline-block;
+	border-top:1px solid #7d7f0b;
+	border-bottom:1px solid #7d7f0b;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#subnavM {
+	position:relative;
+	list-style:none;
+    margin-top:-3em;
+    text-align:center;
+	padding-bottom:2em;
+	padding-top:1em;
+	font-size:100%;
+}
+#subnavM li {
+	display:inline-block;
+	width:6.7em;
+	border:1px solid #e88862;
+    border-width:.7px 0;
+}
+#subnavM a {
+	display:inline-block;
+	width:6.7em;
+	color:#7d7f0b;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#subnavM li:hover {
+	display:inline-block;
+	width:6.7em;
+	border-top:1px solid #7d7f0b;
+	border-bottom:1px solid #7d7f0b;
+}
+#subnavM li a:hover {
+	display:inline;
+	color:#7d7f0b;
+	opacity:.7;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#sort {
+	clear:both;
+	list-style:none;
+    margin:0 auto;
+    text-align:center;
+	padding:1em;
+}
+#sort li {
+	position:relative;
+	margin:0 auto;
+    text-align:center;
+	display:inline;
+	border:1px solid #e88862;
+    border-width:.7px 0;
+	}
+#sort a {
+	display:inline;
+	color:#e88862;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#sort a:hover {
+	display:inline;
+	opacity:.8;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#sort li a:hover {
+	display:inline;
+	color:#7d7f0b;
+	border:1px solid #4a860a;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#already {
+	position:relative;
+	margin:0 auto;
+	text-align:center;
+	margin-top:-2em;
+}
+#already a {
+	display:inline;
+	color:#7d7f0b;
+	border:.01px solid #000;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+	padding-left:.5em;
+	padding-right:.5em;
+}
+#already a:hover {
+	color:#e88862;
+	display:inline;
+	border:1px solid #7e88862;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#msg {
+    margin:0;
+    text-align:center;
+	padding:1em;
+	margin-top:-2em;
+}
+#msg p {
+	position:relative;
+	margin:0 auto;
+    text-align:center;
+	padding:.5em;
+    border-width:.7px 0;
+	}
+#msg p a {
+	display:inline;
+	color:#e88862;
+	border:.01px solid #000;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+	padding-left:.5em;
+	padding-right:.5em;
+}
+#msg p a:hover {
+	color:#7d7f0b;
+	display:inline;
+	border:1px solid #7e88862;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#msg a {
+	display:inline;
+	color:#7d7f0b;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+	padding-left:.5em;
+	padding-right:.5em;
+}
+#msg a:hover {
+	display:inline;
+	border:1px solid #7e88862;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#msg li a:hover {
+	display:inline;
+	color:#7d7f0b;
+	border:1px solid #4a860a;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#log p{
+    margin:0 auto;
+    text-align:center;
+}
+h1 {
+	text-align:center;
+	color:#4a860a;
+	font-size:150%;
+}
+h1 a {
+	color:#e88862;
+	text-decoration:none;
+}
+h1 a:hover {
+	opacity:.8;
+	color:#e88862;
+}
+h2 {
+	text-align:center;
+	color:#8d8f12;
+	font-size:140%;
+}
+h3 {
+	text-align:center;
+	color:#8d8f12;
+	font-size:130%;
+}
+h4 {
+	text-align:center;
+	color:#8d8f12;
+	font-size:120%;
+}
+img#h {
+	height:.1em;
+	padding-bottom:1em;
+	padding-top:.3em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+	color:#4a860a;
+	font-size:120%;
+}
+
+#HW {
+	list-style:none;
+    margin:1em;
+	margin-left:4em;
+    xtext-align:center;
+	padding-top:1.5em;
+	padding-bottom:.2em;
+	font-size:170%;
+	line-height:1.3;
+}
+#HW .indent {
+	color:#a3441d;
+	margin-left:1em;
+}
+#HW li {
+	padding:.3em;
+	xdisplay:inline;
+	}
+#HW a {
+	color:#e88862;
+	text-decoration:none;
+	cursor:url(Egg_Dude_CROPPED_26x32.ico), auto;
+}
+#HW .indent a {
+	color:#a3441d;
+	text-decoration:none;
+}
+td input {
+	padding-top: 0;
+    padding-left: 0;   
+}
+td.format{
+	margin-left:5em;
+	color:skyblue;
+	line-height:1.2em;
+}
+td.state {
+	padding-left:2em;
+	padding-bottom:2em;
+}
+table {
+	font-size:1.3em;
+	color:#4a860a;
+	line-height:1.7em;
+	padding:3em;
+	margin-left:5em;
+}
+#reset {
+	font-size:.7em;
+	height:30px;
+	width:90px;
+	color:#fff;
+	background:red;
+}
+#newmeeting td input {
+	margin-bottom:.2em;
+}
+#submit {
+	font-size:.7em;
+	height:30px;
+	width:90px;
+	color:#000;
+	background:lime;
+}
+div.form {
+	color:lime;
+	line-height:2em;
+	margin-left:10em;	
+}
+footer p span {
+	 color:#7d7f0b;
+}
+table.user {
+	border:thin inset #8d8f12;
+	margin:0 auto;
+	color:#4a860a;
+	width:15em;
+	overflow:visible;
+}
+table.user td {
+	color:#4a860a;
+	xpadding-left:1em;
+	xpadding-right:1em;
+	padding-top:.5em;
+}
+table.user td {
+	padding-left:2em;
+	xfloat:right;
+	xcolor:white;
+	xfont-size:.8em;
+	margin-left:1em;
+	margin-top:1em;
+	vertical-align:middle;
+	width:9em;
+}
+table.user label {
+	float:right;
+}
+table.user td input[type='text']:hover {
+	cursor:url(Egg_Dude_CROPPED_26x32.ico) auto;
+}
+table.user td input, td text, td select, td textarea, td radio {
+	float:right;
+	margin-right:2em;
+	background-color:#4a860a;
+	color:white;
+	font-size:1em;
+	width:auto;
+	vertical-align:top;
+}
+table.user td.inputs, td select {
+	xmargin-top:-2em;
+}
+table.user td.submitUser input {
+}
+table.user a {
+	color:#e88862;
+	text-decoration:none;
+}
+table.user a:hover {
+	opacity:.8;
+	color:#e88862;
+}
+table.user td input[type="submit"], input[type="reset"] {
+	margin-top:1em;
+	margin-bottom:1em;
+    background: none repeat scroll 0 0 #4a860a;
+    cursor: url(Egg_Dude_CROPPED_26x32.ico), auto;
+    display: inline-block;
+    padding: 7px;
+    text-transform: uppercase;
+	border:medium white outset;
+}
+table.update {
+	border:thin inset #8d8f12;
+	margin:0 auto;
+	color:#4a860a;
+	width:10em;
+	overflow:visible;
+}
+table.update td {
+	color:#4a860a;
+	xpadding-left:1em;
+	xpadding-right:1em;
+	xpadding-top:.5em;
+}
+table.update td.labels {
+	float:right;
+	color:white;
+	font-size:.8em;
+	margin-left:1em;
+	margin-top:1em;
+	vertical-align:middle;
+	width:9em;
+}
+table.update td.textarealabel {
+	float:left;
+	color:white;
+	font-size:.8em;
+	margin-left:1em;
+	margin-top:1em;
+	vertical-align:middle;
+	width:9em;
+}
+table.update td.labels label {
+	margin-top:.5em;
+	float:left;
+}
+table.update td.inputs input[type='text']:hover {
+	cursor:url(Egg_Dude_CROPPED_26x32.ico) auto;
+}
+table.update td.inputs input, td text, td select, td textarea, radio {
+	float:right;
+	margin-right:1em;
+	xmargin-top:-1.1em;
+	background-color:#4a860a;
+	color:#000;
+	font-size:.8em;
+	width:auto;
+	vertical-align:top;
+}
+table.update td.inputs input.radio {
+	margin-top:-2em;
+}
+
+textarea {
+	font-size:1.1em;
+}
+label.radio {
+	float:right;
+	margin-top:-2.2em;
+	margin-right:2em;
+}
+td.submitUser {
+	margin:0 auto;
+	text-align:center;
+	padding-bottom:1em;
+}
+
+table.meetings {
+	border:thin inset #8d8f12;
+	margin:0 auto;
+	color:#fff;
+}
+table.meetings th {
+	border:thin inset #8d8f12;
+	padding-left:.3em;
+	padding-right:.3em;
+}
+table.meetings td {
+	color:#fff;
+	padding-left:1em;
+	padding-right:1em;
+	font-size:.7em;
+}
+table.meetings td input {
+	float:right;
+}
+td.submitmeetings {
+	margin:0 auto;
+	text-align:center;
+	padding-bottom:1em;
+}
+table.meetings submit {
+	padding-bottom:1em;
+	}
+table.meetings a {
+	color:#e88862;
+	text-decoration:none;
+	padding-bottom:1em;
+}
+table.meetings a:hover {
+	opacity:.8;
+	color:#e88862;
+}
+div.error {
+	margin:0 auto;
+	text-align:center;
+}
+p.select a {
+	color:skyblue;
+}
+p.select a:hover{
+	color:lime;
+}
+span.sublabels {
+	font-size:.8em;
+}
+input.radio {
+	margin-top:-2em;
+	margin-right:2em;
+}
+	
+input[type='radio']:after {
+    width: 5px;
+    height: 5px;
+    border-radius: 8px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #4a860a;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid #4a860a;
+}
+input[type='radio']:checked:after {
+    width: 5px;
+    height: 5px;
+    border-radius: 8px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #FFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid #4a860a;
+}
+
+input[type="submit"], input[type="reset"] {
+    background: none repeat scroll 0 0 #8C8C69;
+    cursor: url(Egg_Dude_CROPPED_26x32.ico), auto;
+    display: inline-block;
+    padding: 7px;
+    text-transform: uppercase;
+	border:thick white outset;
+	}
+
